@@ -43,7 +43,6 @@ parse_dates = [
 @click.option('--target_table', default='yellow_taxi_data', help='Target table name')
 def run(pg_user, pg_pass, pg_host, pg_db, pg_port, year, month, chunksize, target_table):
 
-    # A good practice would be setting these as environment variables
     # Parameters are now passed via command line options
 
     prefix = "https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow"
